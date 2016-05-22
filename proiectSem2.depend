@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1462732393 source:d:\codeblocks projects\proiectsem2\mystring.c
+	"myString.h"
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1462731815 d:\codeblocks projects\proiectsem2\mystring.h
+	<stdio.h>
+	<stdbool.h>
+
+1462731191 source:d:\codeblocks projects\proiectsem2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"myString.h"
+
