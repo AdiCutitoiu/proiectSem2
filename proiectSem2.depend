@@ -1,17 +1,23 @@
 # depslib dependency file v1.0
-1462732393 source:d:\codeblocks projects\proiectsem2\mystring.c
+1465073897 source:d:\codeblocks projects\proiectsem2\mystring.c
 	"myString.h"
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
 
-1462731815 d:\codeblocks projects\proiectsem2\mystring.h
+1465053103 d:\codeblocks projects\proiectsem2\mystring.h
 	<stdio.h>
 	<stdbool.h>
 
-1462731191 source:d:\codeblocks projects\proiectsem2\main.c
+1465072165 source:d:\codeblocks projects\proiectsem2\main.c
 	<stdio.h>
 	<stdlib.h>
-	<string.h>
+	"myString.h"
+	"cmdHandler.h"
+
+1465074790 d:\codeblocks projects\proiectsem2\cmdhandler.h
+
+1465073915 source:d:\codeblocks projects\proiectsem2\cmdhandler.c
+	"cmdHandler.h"
 	"myString.h"
 

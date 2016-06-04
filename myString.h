@@ -26,7 +26,11 @@ void myStrcat(char *first, char *second);
   Returns NULL if the character was not found*/
 char* myStrchr(char *str, char characterToFind);
 
-//MYSTRSTR
+/*Searches for the second string in the first string
+  If a match is found, the function returns a pointer to the
+  part of the string matching
+  If no match is found, return NULL*/
+char* myStrstr(char *first, char *second);
 
 /*Returns the length of the string*/
 int myStrlen(char *str);
@@ -91,15 +95,5 @@ int myStrncmp(char *first, char *second, int nrCharacters);
 /*Counts the number of occurences of a given character in
   a string*/
 int myCountStringChar(char* str, char character);
-
-/*inttostr*/
-/*strtoint*/
-
-/*floattostr*/
-/*strtofloat*/
-
-/*doubletostr*/
-/*strtodouble*/
-
 
 #endif // MYSTRING_H_INCLUDED
