@@ -240,22 +240,6 @@ char* myStrtok(char *str, char *delimiters){
     return myStrchr(delimiters, *next) || *next == '\0'? NULL : next;
 }
 
-bool myIsalpha(char character){
-
-    return  (character >= 'A' && character <= 'Z') ||
-            (character >= 'a' && character <= 'z');
-}
-
-bool myIsnum(char character){
-
-    return character >= '0' && character <= '9';
-}
-
-bool myIsalnum(char character){
-
-    return myIsalpha(character) || myIsnum(character);
-}
-
 char myToupper(char character){
 
     return (character >= 'a' && character <= 'z') ? (character-32) : (character);
@@ -285,7 +269,6 @@ void myStrlwr(char *str){
 }
 
 int myStrcmp(char *first, char* second){
-
     while( (*first == *second) && *first && *second){
         first++;
         second++;

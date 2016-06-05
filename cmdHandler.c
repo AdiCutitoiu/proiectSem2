@@ -1,14 +1,18 @@
 #include "cmdHandler.h"
 #include "myString.h"
 
+/**@file main.c
+  *@brief String library.
+
+    Created by Adrian-Nicolae Cutitoiu.
+  */
+
 int scanNumber(){
     int number;
     char c;
 
-    /*Scan the number*/
     scanf("%d", &number);
 
-    /*Skip newline character*/
     scanf("%c", &c);
 
     return number;
@@ -21,10 +25,8 @@ int scanCommand(){
 char scanCharacter(){
     char c, x;
 
-    /*Scan the character*/
     scanf("%c", &c);
 
-    /*Skip new line character*/
     scanf("%c", &x);
 
     return c;
@@ -38,7 +40,7 @@ void scan2Strings(char *first, char *second){
     myGetline(second);
 }
 
-int scan2String1Number(char *first, char *second){
+int scan2Strings1Number(char *first, char *second){
     scan2Strings(first, second);
     return scanNumber();
 }
@@ -54,13 +56,10 @@ void printNumber(int number){
 void commandInterpreter(){
     int current_command;
 
-    /*Pointer for myStrtok function*/
     char *p;
 
-    /*For functions requiring a number (myStrn.. functions)*/
     int number;
 
-    /*For myStrchr and myCountStringChar functions*/
     int character;
 
     char first[STRING_LENGTH], second[STRING_LENGTH];
@@ -83,7 +82,7 @@ void commandInterpreter(){
                 break;
 
             case STRNCPY:
-                number = scan2String1Number(first, second);
+                number = scan2Strings1Number(first, second);
                 myStrncpy(first, second, number);
                 printString(first);
                 break;
@@ -131,7 +130,7 @@ void commandInterpreter(){
                 break;
 
             case STRNCMP:
-                number = scan2String1Number(first, second);
+                number = scan2Strings1Number(first, second);
                 printNumber( myStrncmp(first, second, number) );
                 break;
             case COUNTSTRINGCHAR:

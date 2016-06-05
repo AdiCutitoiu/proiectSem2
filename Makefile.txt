@@ -1,0 +1,14 @@
+output: main.o myString.o cmdHandler.o
+	gcc main.o myString.o cmdHandler.o -o output
+
+main.o: main.c
+	gcc -c main.c
+
+myString.o: myString.c myString.h
+	gcc -c myString.c
+
+cmdHandler.o: cmdHandler.c cmdHandler.h
+	gcc -c cmdHandler.c
+
+clean:
+	rm *.o output
